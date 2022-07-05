@@ -76,8 +76,10 @@ Q2 - Big-O gösterimini yazınız.
 
 
 
+
+  
 ### ANSWER 2 ###
 
-  Best case    : O(n*logn)
-  Average case : O(n*logn)
-  Worst case   : O(n*logn)
+    Best case    : O(n*logn)
+    Average case : O(n*logn)
+    Worst case   : O(n*logn)
