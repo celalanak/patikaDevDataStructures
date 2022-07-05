@@ -36,7 +36,7 @@ Sayı Dizimiz = [22,27,16,2,18,6]
     Worst case: [27, 22, 18, 16, 6, 2]  
     Best case: [2, 6, 16, 18, 22, 27]
 
-### Answer 4 ###
+### ANSWER 4 ###
 
     Average case
 
@@ -46,3 +46,38 @@ Sayı Dizimiz = [22,27,16,2,18,6]
     [3, 7| , 5, 8, 2, 9, 4, 15, 6]
     [3, 5, 7| , 8, 2, 9, 4, 15, 6]
     [3, 5, 7, 8| , 2, 9, 4, 15, 6]
+
+
+### PROJECT 2 ###
+
+[16,21,11,8,12,22] -> Merge Sort
+
+Q1 - Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+Q2 - Big-O gösterimini yazınız.
+
+### ANSWER 1 ###
+
+    Sıralanmasını istediğimiz sayı listemiz [16,21,11,8,12,22].
+
+    ### FIRST STEP ###
+
+    - İlk önce listemizi 2'ye bölelim.
+        16,21,11  8,12,22
+            - Böldüğümüz listeyi tekrardan ikiye bölelim.
+                *** Elde edilen parçalar 2 veya daha küçük eleman sayısına ulaştığı için durulur.
+            - Her parçayı kendi içinde sırala
+                16, 21 - 11 - 8,12 - 22
+            - Her bölünmüş parçayı sıralı bir şekilde birleştir.
+                11, 16, 21 - 8, 12, 22
+            - Tek bir bütün parça haline gelmesi için tekrar birleştirilir.
+                8, 11, 12, 16, 21, 22
+            - Tek parça olduğundan dolayı işlem durur, sayı dizimiz aşağıdaki gibidir.
+                sayi_dizisi = [8, 11, 12, 16, 21, 22]
+
+
+
+### ANSWER 2 ###
+
+  Best case    : O(n*logn)
+  Average case : O(n*logn)
+  Worst case   : O(n*logn)
